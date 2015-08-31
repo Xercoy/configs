@@ -1,0 +1,26 @@
+>>Run interactive shell
+docker run -i -t *ubuntu* /bin/bash
+
+-i starts interactive container
+-t creates a pseudo-TTY that attaches stdin and stdout
+
+Detatch tty without exiting shell, use Ctl-p or Ctl-q, exist in stopped state once exited. 
+
+
+
+>>List all containers
+docker ps -a
+
+
+
+>>Remove containers 
+docker rm <container_name>
+
+use -f to force
+
+>>Mapping ports
+docker run -P
+
+automatically map any port on container to random high port with ephemeral port range on Docker host. 
+
+80:5000 map 80 on host to 5000 of container
