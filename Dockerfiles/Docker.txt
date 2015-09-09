@@ -24,3 +24,8 @@ docker run -P
 automatically map any port on container to random high port with ephemeral port range on Docker host. 
 
 80:5000 map 80 on host to 5000 of container
+
+>>Remove all Docker containers
+https://coderwall.com/p/ewk0mq/stop-remove-all-docker-containers
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
